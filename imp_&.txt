@@ -1,0 +1,4 @@
+if : int num = 10
+prinf num will return the memory adress
+
+prinf &num will return the 10 as the face value
