@@ -1,19 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main(){
-    // Write a program to insert an num in an array and print it out 
-    int a[] = {};
-    printf("Enter a number to be inserted in the array.");
-    int i ;
-    scanf("%d",&i);
-    // now the size of the array in required
-    size_t size = sizeof(a)/sizeof(a[0]);
-    printf("%d",size);
-    int m  = size +1;
-    a[m] = i;  
-    printf("\n%d\n",&a);
+int main() {
+  int arr[12]; // gievn it an static range to prevent memory leaks and infinite loops while using range
 
+  for (int i =0; i<10; i++) {
+    printf("Enter a number for the element to be inserted in the array:  %d: ", i + 1); // gievn  i +`1 to append it
+    scanf("%d", &arr[i]);
+    printf("\n"); // make it preety
+  }
 
+  for (int i = 0; i < 10; i++) {
+    printf("%d ", arr[i]); // just to print the contents of the array
+  }
 }
-
